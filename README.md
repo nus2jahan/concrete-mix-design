@@ -1,38 +1,47 @@
-# Concrete Mix Design and Analysis GUI Application
+# 🏗️ Concrete Mix Design & Aggregate Analysis Suite
 
-A comprehensive, modular MATLAB application designed for the calculation, estimation, and visualization of concrete mix proportions and aggregate properties.
+[![MATLAB](https://img.shields.io/badge/MATLAB-Base_Functionality-orange)](https://www.mathworks.com/products/matlab.html)
+[![Engineering](https://img.shields.io/badge/Industry-Civil_Engineering-blue)](https://www.asce.org/)
+[![Documentation](https://img.shields.io/badge/Status-Complete-green)](https://github.com/nus2jahan/concrete-mix-design)
+
+A comprehensive, modular MATLAB application designed for the calculation, estimation, and visualization of concrete mix proportions and aggregate properties. This repository provides a complete analytics dashboard for civil and structural engineering researchers, automating complex computational pipelines from laboratory data to publication-ready results.
+
+---
 
 ## 📖 Overview
 
-This repository contains a modular, script-based analytics dashboard engineered for civil and structural engineering researchers. Built entirely on base MATLAB, it seamlessly integrates standard mix design methodologies, laboratory data processing, and physical property visualization. 
+This repository contains a modular, script-based analytics dashboard engineered to bridge the gap between raw laboratory data and structural design requirements. Built on base MATLAB, the suite integrates standard mix design methodologies (ACI & British), physical property visualization, and advanced economic estimation.
 
-The suite automates complex computational pipelines including absolute volume determination, moisture content adjustment, Fineness Modulus (FM) calculation, multi-standard mix proportioning, and semilogarithmic aggregate gradation plotting.
+The application automates:
+*   **Absolute Volume Determination** for precise batching.
+*   **Moisture Content Adjustment** for real-world field conditions.
+*   **Fineness Modulus (FM) Calculation** via standardized sieve analysis.
+*   **Multi-standard Mix Proportioning** (ACI 211.1 and British Standard).
+*   **Semilogarithmic Gradation Plotting** for quality control.
 
 ---
 
 ## ✨ Comprehensive Features
 
 ### 1. Advanced Mix Design Methodologies
-* **Dual-Standard Implementation:** Users can toggle between the **ACI 211.1 (American)** and **British Standard** approaches. This allows for comparative studies between different international design philosophies within a single environment.
-* **Smart Interpolation Engine:** Instead of relying on manual lookups from physical tables, the software utilizes **linear interpolation algorithms**. This calculates precise mixing water requirements and entrapped/entrained air content by calculating values between standard data points, ensuring high precision in non-standard environmental conditions.
-* **Dynamic Unit Management:** The suite supports full-scale switching between the **Metric System** (mm, MPa, kg) and the **Imperial System** (inches, psi, lb). This prevents the common manual error of "unit mixing" by enforcing consistency throughout the entire computational pipeline.
+* **Dual-Standard Implementation:** Toggle between **ACI 211.1 (American)** and **British Standard** approaches to compare international design philosophies.
+* **Smart Interpolation Engine:** Uses **linear interpolation algorithms** to determine precise mixing water and entrapped/entrained air content, eliminating manual lookup table errors.
+* **Dynamic Unit Management:** Full-scale switching between the **Metric System** (mm, MPa, kg) and the **Imperial System** (inches, psi, lb) to maintain mathematical consistency.
 
-### 2. Aggregate Analysis
-* **Automated Sieve Analysis:** Automates the conversion of raw laboratory mass data into meaningful metrics. It computes:
-    * Individual and cumulative mass retained per sieve.
-    * Cumulative percent retained and percent finer.
-    * Grading curves necessary for quality control.
-* **Fineness Modulus (FM) Engine:** A dedicated module that mathematically processes standardized sieve fractions to compute the FM. This serves as a primary indicator for the particle size distribution of fine aggregates, influencing the workability and water demand of the mix.
-* **Dynamic Moisture Adjustment:** The software accounts for real-world laboratory conditions by adjusting batch water requirements based on the measured **Absorption Capacity** and **Field Moisture Content** of the aggregates, ensuring the water-to-cement ratio remains constant in the final mix.
+### 2. Automated Aggregate Analysis
+* **Sieve Analysis Module:** Converts raw laboratory mass data into individual and cumulative mass retained, as well as percent finer.
+* **Fineness Modulus (FM) Engine:** Mathematically processes standardized sieve fractions to calculate the FM, a primary indicator for particle size distribution.
+* **Dynamic Moisture Adjustment:** Automatically adjusts batch water requirements based on measured **Absorption Capacity** and **Field Moisture Content**.
 
 ### 3. Advanced Visualization & Data Output
-* **Semilog Gradation Engine:** Generates publication-ready semilogarithmic plots (Sieve Opening vs. Percent Finer). These graphs are essential for identifying "gap-graded" vs. "well-graded" aggregates.
-* **Visual Grading Confirmation:** Utilizes MATLAB's high-fidelity plotting engine to allow engineers to visually inspect particle size distribution against standard grading envelopes.
-* **Structured CLI Reporting:** Rather than simple text dumps, the software outputs highly formatted, matrix-style tables in the Command Window, facilitating easy data entry into laboratory notebooks or Excel.
+* **Semilog Gradation Engine:** Generates publication-ready semilogarithmic plots (Sieve Opening vs. Percent Finer) to identify "gap-graded" vs. "well-graded" aggregates.
+* **Visual Grading Confirmation:** High-fidelity plotting to allow engineers to visually inspect distribution against standard grading envelopes.
+* **Structured CLI Reporting:** Outputs highly formatted, matrix-style tables in the Command Window for easy data entry.
 
-### 4. Cost & Volume Estimation
-* **Absolute Volume Translation:** Moves beyond simple mass-based mixing by converting all ingredients into their exact **Absolute Volumes** using specific gravities. This ensures that the final yield matches the design volume exactly.
-* **Economic Analysis (Batch Costing):** Integrates localized material unit pricing to provide a real-time cost estimation per unit volume of concrete, factoring in the cost of cement, aggregates, water, and admixtures.
+### 4. Economic & Volumetric Estimation
+* **Absolute Volume Translation:** Converts all ingredients into exact absolute volumes using specific gravities, ensuring the final yield matches the design volume.
+* **Batch Costing:** Integrates localized material unit pricing to provide real-time cost estimation per unit volume.
+* **Trial Mix Calculation:** Automates the calculation of required volumes for experimental specimens (Cylinders, Rectangular, or Square blocks).
 
 ---
 
