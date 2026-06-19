@@ -17,7 +17,7 @@ The suite automates complex computational pipelines including absolute volume de
 * **Smart Interpolation Engine:** Instead of relying on manual lookups from physical tables, the software utilizes **linear interpolation algorithms**. This calculates precise mixing water requirements and entrapped/entrained air content by calculating values between standard data points, ensuring high precision in non-standard environmental conditions.
 * **Dynamic Unit Management:** The suite supports full-scale switching between the **Metric System** (mm, MPa, kg) and the **Imperial System** (inches, psi, lb). This prevents the common manual error of "unit mixing" by enforcing consistency throughout the entire computational pipeline.
 
-### 2. Aggregate & Signal Processing
+### 2. Aggregate Analysis
 * **Automated Sieve Analysis:** Automates the conversion of raw laboratory mass data into meaningful metrics. It computes:
     * Individual and cumulative mass retained per sieve.
     * Cumulative percent retained and percent finer.
