@@ -1,4 +1,4 @@
-# 🏗️ Concrete Mix Design & Aggregate Analysis Suite
+# 🏗️ Concrete Mix Design & Aggregate Analysis GUI Application on MATLAB
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-Base_Functionality-orange)](https://www.mathworks.com/products/matlab.html)
 [![Engineering](https://img.shields.io/badge/Industry-Civil_Engineering-blue)](https://www.asce.org/)
