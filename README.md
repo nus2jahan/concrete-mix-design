@@ -1,4 +1,4 @@
-# Concrete Mix Design and Analysis Suite
+# Concrete Mix Design and Analysis GUI Application
 
 A comprehensive, modular MATLAB application designed for the calculation, estimation, and visualization of concrete mix proportions and aggregate properties.
 
