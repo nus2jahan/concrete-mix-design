@@ -115,5 +115,4 @@ $$V_{fine\_agg} = V_{total} - (V_{water} + V_{cement} + V_{coarse\_agg} + V_{air
 concrete-mix-design/
 ├── Group_3.m                    # Primary computational engine (ACI/British logic, CLI, & Plots)
 ├── aci_trial_cost_sieve.pdf      # Comprehensive methodology documentation & reference tables
-├── image_004b64.png              # Sample output: Semilogarithmic gradation visualization
 └── README.md                    # Project documentation
